@@ -4,315 +4,277 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#4f46e5">
+    <meta name="theme-color" content="#ffffff">
     
-    <title>Resize Image to 20kb, 50kb | Premium Photo Resizer 2025</title>
-    <meta name="description" content="Best Free Online Image Resizer. Reduce photo size to 20kb, 50kb, 100kb instantly. Compress JPG, PNG for SSC, UPSC, Govt Forms without quality loss.">
-    <meta name="keywords" content="resize image, photo resizer, image resizer in kb, reduce image size, photo compressor 20 kb, compress jpg to 20kb, ssc photo resizer, upsc signature resize, passport size photo maker, compress to 50kb, online image resizer">
-    <meta name="author" content="Fast Tools India">
-
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
-
-    <script src="https://unpkg.com/browser-image-compression@2.0.0/dist/browser-image-compression.js"></script>
+    <title>Online Mouse Jiggler | Move Mouse & Keep Computer Awake</title>
+    <meta name="description" content="Best Free Online Mouse Jiggler 2025. Keeps your computer awake, mouse moving, and Teams/Slack status green. No download required. Works on Windows & Mac.">
+    <meta name="keywords" content="mouse jiggler, move mouse, wiggler, mouse mover, keep computer awake, mouse auto mover, online mouse jiggler, mouse jiggler online, mouse movement, automatic mouse mover, mouse jiggler app, jiggler mouse, move mouse online">
+    <meta name="author" content="StayAwake Pro">
     
+    <meta property="og:title" content="Online Mouse Jiggler - Keep Teams Green">
+    <meta property="og:description" content="Prevent sleep mode and keep your screen active without installing software.">
+    <meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --accent: #ec4899;
-            --bg: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --text: #f8fafc;
-            --text-muted: #94a3b8;
-            --border: rgba(255, 255, 255, 0.1);
+            --primary: #2563eb;       /* Royal Blue */
+            --primary-hover: #1d4ed8;
+            --success: #10b981;       /* Green for Active */
+            --bg-body: #ffffff;       /* Pure White */
+            --bg-card: #f8fafc;       /* Very Light Grey */
+            --text-main: #0f172a;     /* Dark Navy */
+            --text-muted: #64748b;    /* Grey */
+            --border: #e2e8f0;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
         }
-        
-        * { box-sizing: border-box; outline: none; -webkit-tap-highlight-color: transparent; }
-        
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
+            background-color: var(--bg-body);
+            color: var(--text-main);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: 
-                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.15) 0px, transparent 50%);
-            overflow-x: hidden;
+            justify-content: flex-start;
         }
 
-        /* ANIMATED BACKGROUND ORBS */
-        .orb { position: absolute; border-radius: 50%; filter: blur(80px); z-index: -1; opacity: 0.4; }
-        .orb-1 { top: -50px; left: -50px; width: 300px; height: 300px; background: var(--primary); }
-        .orb-2 { bottom: -50px; right: -50px; width: 300px; height: 300px; background: var(--accent); }
-
-        .container { width: 100%; max-width: 600px; padding: 2rem 1.5rem; display: flex; flex-direction: column; gap: 2rem; z-index: 1; }
-        .hidden { display: none !important; }
-
-        /* HEADER */
-        header { text-align: center; margin-bottom: 1rem; }
-        .badge {
-            display: inline-block; background: linear-gradient(90deg, var(--primary), var(--accent));
-            color: white; padding: 6px 16px; border-radius: 50px; font-size: 0.75rem; font-weight: 800;
-            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);
+        /* NAVBAR */
+        nav {
+            width: 100%; padding: 1.5rem 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid var(--border);
+            background: rgba(255,255,255,0.8);
+            backdrop-filter: blur(10px);
+            position: sticky; top: 0; z-index: 100;
         }
-        h1 { font-size: 2.5rem; font-weight: 800; margin: 0; line-height: 1.1; letter-spacing: -1px; background: linear-gradient(to right, #fff, #cbd5e1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        p.desc { font-size: 1rem; color: var(--text-muted); margin-top: 0.5rem; max-width: 400px; margin-left: auto; margin-right: auto; }
+        .logo { font-weight: 800; font-size: 1.25rem; letter-spacing: -0.5px; color: var(--text-main); }
+        .logo span { color: var(--primary); }
 
-        /* GLASS CARD */
-        .card {
-            background: var(--card-bg);
-            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+        /* AD SPACE (TOP) */
+        .ad-banner-top {
+            width: 100%; max-width: 728px; height: 90px;
+            background: #f1f5f9; border-radius: 8px;
+            margin: 20px auto; display: flex; align-items: center; justify-content: center;
+            color: #94a3b8; font-size: 0.8rem; border: 1px dashed #cbd5e1;
+        }
+
+        /* MAIN CONTAINER */
+        .main-container {
+            width: 100%; max-width: 500px;
+            padding: 2rem; text-align: center;
+            margin-top: 1rem;
+        }
+
+        h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 0.5rem; line-height: 1.1; }
+        .subtitle { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2.5rem; }
+
+        /* CARD DESIGN */
+        .tool-card {
+            background: var(--bg-body);
             border: 1px solid var(--border);
-            border-radius: 24px; padding: 2rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border-radius: 24px;
+            padding: 3rem 2rem;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
         }
+        .tool-card:hover { transform: translateY(-2px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
 
-        /* UPLOAD ZONE */
-        .upload-zone {
-            border: 2px dashed var(--text-muted);
-            background: rgba(255,255,255,0.03);
-            border-radius: 16px; padding: 3rem 1rem;
-            text-align: center; cursor: pointer;
-            transition: all 0.3s ease;
+        /* STATUS INDICATOR */
+        .status-dot {
+            width: 16px; height: 16px; background: #cbd5e1;
+            border-radius: 50%; margin: 0 auto 1.5rem;
+            box-shadow: 0 0 0 4px #f1f5f9;
+            transition: all 0.5s;
         }
-        .upload-zone:hover { border-color: var(--primary); background: rgba(99, 102, 241, 0.1); transform: translateY(-2px); }
-        .upload-icon { font-size: 3rem; margin-bottom: 1rem; display: block; }
-        .upload-text { font-weight: 700; font-size: 1.2rem; margin-bottom: 0.5rem; color: white; }
-        .upload-sub { font-size: 0.85rem; color: var(--text-muted); }
+        .status-dot.active { background: var(--success); box-shadow: 0 0 0 4px #d1fae5, 0 0 20px var(--success); }
 
-        /* CONTROLS */
-        .controls { margin-top: 2rem; }
-        .slider-header { display: flex; justify-content: space-between; margin-bottom: 1rem; font-weight: 600; font-size: 0.9rem; }
-        .slider-val { color: var(--accent); }
+        .timer { font-size: 3.5rem; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -2px; margin-bottom: 0.5rem; }
+        .status-text { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 2rem; }
+
+        /* BUTTON */
+        .btn-primary {
+            width: 100%; padding: 1.2rem;
+            background: var(--text-main); color: white;
+            border: none; border-radius: 12px;
+            font-size: 1.1rem; font-weight: 600;
+            cursor: pointer; transition: all 0.2s;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover { background: #334155; transform: translateY(-1px); }
+        .btn-primary:active { transform: scale(0.98); }
         
-        input[type=range] {
-            width: 100%; -webkit-appearance: none; background: rgba(255,255,255,0.1); height: 6px; border-radius: 10px; cursor: pointer;
+        .btn-primary.running {
+            background: white; color: var(--text-main);
+            border: 2px solid var(--border);
         }
-        input[type=range]::-webkit-slider-thumb {
-            -webkit-appearance: none; height: 24px; width: 24px; border-radius: 50%; background: var(--primary);
-            box-shadow: 0 0 20px var(--primary); margin-top: -9px; transition: transform 0.2s;
-        }
-        input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
-        input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 6px; }
+        .btn-primary.running:hover { border-color: #ef4444; color: #ef4444; }
 
-        /* BUTTONS */
-        .btn-main {
-            width: 100%; margin-top: 2rem; 
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            color: white; border: none; padding: 1.2rem; border-radius: 16px; 
-            font-size: 1.1rem; font-weight: 700; cursor: pointer; 
-            box-shadow: 0 10px 30px -10px var(--primary);
-            transition: transform 0.2s, box-shadow 0.2s;
-            position: relative; overflow: hidden;
-        }
-        .btn-main:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -10px var(--primary); }
-        .btn-main:active { transform: scale(0.98); }
-
-        /* PRESETS GRID */
-        .presets-title { text-align: center; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin: 3rem 0 1rem; }
-        .presets { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
-        .btn-pill {
-            background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text-muted);
-            padding: 10px; border-radius: 12px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: 0.3s;
-        }
-        .btn-pill:hover { background: var(--primary); color: white; border-color: var(--primary); }
-
-        /* PREVIEW */
-        #preview-area { margin-top: 1.5rem; }
-        .img-box { position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); height: 150px; }
-        .img-box img { width: 100%; height: 100%; object-fit: cover; }
-        .del-btn {
-            position: absolute; top: 5px; right: 5px; background: rgba(0,0,0,0.8); color: white;
-            border: none; width: 24px; height: 24px; border-radius: 50%; cursor: pointer;
+        /* AD SPACE (CENTER) */
+        .ad-banner-center {
+            width: 300px; height: 250px;
+            background: #f1f5f9; border-radius: 8px;
+            margin: 2rem auto 0; display: flex; align-items: center; justify-content: center;
+            color: #94a3b8; font-size: 0.8rem; border: 1px dashed #cbd5e1;
         }
 
-        footer { margin-top: auto; padding: 2rem; font-size: 0.8rem; color: var(--text-muted); text-align: center; }
-
+        /* HIDDEN SEO CONTENT */
+        .seo-box { 
+            margin-top: 3rem; text-align: left; 
+            padding: 2rem; background: #f8fafc; border-radius: 16px;
+            font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;
+        }
+        .seo-box h2 { color: var(--text-main); font-size: 1.2rem; margin-bottom: 1rem; }
+        
+        .hidden-video { position: absolute; width: 1px; height: 1px; opacity: 0.001; pointer-events: none; }
     </style>
 </head>
 <body>
 
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
+    <nav>
+        <div class="logo">Stay<span>Awake</span></div>
+        <div style="font-size:0.9rem; font-weight:500;">Free Online Tool</div>
+    </nav>
 
-    <div class="container">
-        
-        <header>
-            <span class="badge">Free Premium Tool</span>
-            <h1>Resize Image <span>in KB</span></h1>
-            <p class="desc">Reduce JPG/PNG size to 20kb, 50kb for Govt Forms. No quality loss.</p>
-        </header>
-
-        <div class="card">
-            <div id="drop-area" class="upload-zone">
-                <span class="upload-icon">📁</span>
-                <div class="upload-text">Tap to Upload Photo</div>
-                <div class="upload-sub">Supports JPG, PNG, WEBP</div>
-                <input type="file" id="file-input" accept="image/*" class="hidden">
-            </div>
-
-            <div id="preview-area" class="hidden">
-                <div class="img-box" id="img-preview-box"></div>
-                <div style="text-align: right; margin-top: 5px;">
-                    <button onclick="resetApp()" style="background:none; border:none; color:#ef4444; cursor:pointer; font-size:0.9rem;">Remove ✕</button>
-                </div>
-            </div>
-
-            <div class="controls" id="controls-area">
-                <div class="slider-header">
-                    <span>Image Quality</span>
-                    <span id="quality-val" class="slider-val">75%</span>
-                </div>
-                <input type="range" id="quality-slider" min="1" max="100" value="75">
-                
-                <button id="compress-btn" class="btn-main">DOWNLOAD COMPRESSED IMAGE</button>
-            </div>
-        </div>
-
-        <div>
-            <div class="presets-title">Quick Resize Options</div>
-            <div class="presets">
-                <button onclick="setPreset(20)" class="btn-pill">📸 SSC (20kb)</button>
-                <button onclick="setPreset(50)" class="btn-pill">📄 UPSC (50kb)</button>
-                <button onclick="setPreset(10)" class="btn-pill">✍️ Sign (10kb)</button>
-                <button onclick="setPreset(100)" class="btn-pill">🖼️ 100kb Photo</button>
-            </div>
-        </div>
-
-        <footer>© 2025 FastTools • Secure Client-Side Processing</footer>
+    <div class="ad-banner-top">
+        <span>Advertisement Space</span>
     </div>
 
+    <video id="dummyVideo" class="hidden-video" loop playsinline muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <div class="main-container">
+        <h1>Mouse Jiggler</h1>
+        <p class="subtitle">Keep your computer awake & status active.</p>
+
+        <div class="tool-card">
+            <div class="status-dot" id="statusDot"></div>
+            <div class="timer" id="timer">00:00:00</div>
+            <div class="status-text" id="statusText">System Sleeping</div>
+
+            <button class="btn-primary" id="toggleBtn">ACTIVATE NOW</button>
+        </div>
+
+        <div class="ad-banner-center">
+            <span>Ad Space (300x250)</span>
+        </div>
+
+        <div class="seo-box">
+            <h2>Why use our Online Mouse Jiggler?</h2>
+            <p>
+                StayAwake is the best <strong>online mouse jiggler</strong> and <strong>mouse mover</strong> tool. 
+                Whether you need to <strong>keep computer awake</strong> for downloads or maintain a green status on Teams/Slack, 
+                our free <strong>wiggler</strong> works perfectly.
+            </p>
+            <p style="margin-top:10px;">
+                No need to download a <strong>mouse jiggler app</strong> or buy a physical <strong>jiggler mouse</strong>. 
+                Just click activate and let our <strong>automatic mouse mover</strong> handle the rest. 
+                Use this <strong>move mouse online</strong> utility safely on any device.
+            </p>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='//pl28113085.effectivegatecpm.com/4b/d4/1a/4bd41ae30bb22fc804c3d14aa4f255a2.js'></script>
+    
+    <script type='text/javascript' src='//pl28113092.effectivegatecpm.com/8d/0c/63/8d0c6341317f6a7ee278a1769846d68b.js'></script>
+
     <script>
-        // 🔥 YOUR DIRECT LINK CONFIGURATION 🔥
-        const MY_DIRECT_LINK = "https://www.effectivegatecpm.com/mya99wcxc?key=64d9a20b4180ef34ece4742665c53be0";
+        // 👇 YOUR DIRECT LINK CONFIGURATION 👇
+        const DIRECT_LINK_URL = "https://www.effectivegatecpm.com/mya99wcxc?key=64d9a20b4180ef34ece4742665c53be0";
+
+        let wakeLock = null;
+        let timerInterval = null;
+        let startTime = null;
+        let isRunning = false;
 
         // Elements
-        const dropArea = document.getElementById('drop-area');
-        const fileInput = document.getElementById('file-input');
-        const previewArea = document.getElementById('preview-area');
-        const previewBox = document.getElementById('img-preview-box');
-        const slider = document.getElementById('quality-slider');
-        const qualityVal = document.getElementById('quality-val');
-        const btn = document.getElementById('compress-btn');
-        
-        let currentFile = null;
+        const statusDot = document.getElementById('statusDot');
+        const statusText = document.getElementById('statusText');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const timerDisplay = document.getElementById('timer');
+        const dummyVideo = document.getElementById('dummyVideo');
 
-        // 1. Slider Logic
-        slider.addEventListener('input', (e) => {
-            qualityVal.innerText = e.target.value + "%";
-        });
-
-        // 2. Upload Handling
-        dropArea.addEventListener('click', () => fileInput.click());
-        fileInput.addEventListener('change', (e) => handleFile(e.target.files[0]));
-        
-        // Drag & Drop
-        dropArea.addEventListener('dragover', (e) => { e.preventDefault(); dropArea.style.borderColor = '#6366f1'; });
-        dropArea.addEventListener('dragleave', (e) => { e.preventDefault(); dropArea.style.borderColor = 'rgba(255,255,255,0.1)'; });
-        dropArea.addEventListener('drop', (e) => {
-            e.preventDefault();
-            handleFile(e.dataTransfer.files[0]);
-        });
-
-        function handleFile(file) {
-            if (!file) return;
-            if (!file.type.startsWith('image/')) return alert("Please upload an image file!");
-            
-            currentFile = file;
-            
-            // Show Preview
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                previewBox.innerHTML = `<img src="${e.target.result}" alt="Preview">`;
-                dropArea.classList.add('hidden');
-                previewArea.classList.remove('hidden');
-            };
-            reader.readAsDataURL(file);
+        function formatTime(ms) {
+            const date = new Date(ms);
+            return date.toISOString().substr(11, 8);
         }
 
-        // 3. Preset Logic (Smart Size)
-        window.setPreset = (targetKB) => {
-            if (!currentFile) { alert("Pehle Photo Upload Karein! 📁"); return; }
-            
-            // Logic: Lower KB needs lower quality
-            let newQuality = 80;
-            if (targetKB <= 20) newQuality = 40;
-            else if (targetKB <= 50) newQuality = 60;
-            else if (targetKB <= 100) newQuality = 75;
-            
-            slider.value = newQuality;
-            qualityVal.innerText = newQuality + "%";
-            
-            // Highlight visual feedback
-            btn.innerText = `DOWNLOAD (${targetKB}kb Mode)`;
-            setTimeout(() => btn.innerText = "DOWNLOAD COMPRESSED IMAGE", 2000);
-        };
-
-        window.resetApp = () => {
-            currentFile = null;
-            fileInput.value = "";
-            previewArea.classList.add('hidden');
-            dropArea.classList.remove('hidden');
-        };
-
-        // 4. Compression & Download Logic (THE MAIN PART)
-        btn.addEventListener('click', async () => {
-            if (!currentFile) return alert("Please select a photo first!");
-
-            // 💰 TRIGGER ADSTERRA DIRECT LINK (NEW TAB)
-            if(MY_DIRECT_LINK) {
-                window.open(MY_DIRECT_LINK, '_blank');
+        // BUTTON CLICK HANDLER
+        toggleBtn.addEventListener('click', () => {
+            if (!isRunning) {
+                // 1. Open Ad in New Tab (Money Maker)
+                if (DIRECT_LINK_URL) {
+                    window.open(DIRECT_LINK_URL, '_blank');
+                }
+                // 2. Start Jiggler
+                startJiggler();
+            } else {
+                stopJiggler();
             }
+        });
 
-            // UI Loading
-            const originalText = btn.innerText;
-            btn.innerText = "Compressing... ⏳";
-            btn.disabled = true;
-
-            // Compression Options
-            const quality = slider.value / 100;
-            const options = {
-                maxSizeMB: 1,          // Default start
-                maxWidthOrHeight: 1920,
-                useWebWorker: true,
-                initialQuality: quality
-            };
-
-            // Smart adjustment for low quality
-            if (quality < 0.5) {
-                options.maxSizeMB = 0.05; // Approx 50kb target
-                options.maxWidthOrHeight = 800; // Resize dimensions for small files
-            }
-
+        async function startJiggler() {
             try {
-                const compressedFile = await imageCompression(currentFile, options);
-                
-                // Create Download
-                const link = document.createElement('a');
-                link.href = URL.createObjectURL(compressedFile);
-                link.download = `compressed_${currentFile.name}`;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                // Try WakeLock API
+                if ('wakeLock' in navigator) {
+                    wakeLock = await navigator.wakeLock.request('screen');
+                }
+                // Fallback to Video
+                dummyVideo.play().catch(()=>{});
 
-                btn.innerText = "Downloaded! ✅";
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.disabled = false;
-                }, 2000);
+                // Update UI
+                isRunning = true;
+                startTime = Date.now();
+                statusDot.classList.add('active');
+                statusText.innerText = "Active • Keeping Awake";
+                statusText.style.color = "var(--success)";
+                toggleBtn.innerText = "STOP JIGGLER";
+                toggleBtn.classList.add('running');
+                document.title = "🟢 Active | Mouse Jiggler";
 
-            } catch (error) {
-                console.error(error);
-                alert("Something went wrong during compression.");
-                btn.innerText = originalText;
-                btn.disabled = false;
+                // Start Timer
+                timerInterval = setInterval(() => {
+                    const elapsed = Date.now() - startTime;
+                    timerDisplay.innerText = formatTime(elapsed);
+                }, 1000);
+
+            } catch (err) {
+                console.error(err);
+                alert("Browser policy blocked wake lock. Interact with page first.");
+            }
+        }
+
+        function stopJiggler() {
+            if (wakeLock) {
+                wakeLock.release().then(() => wakeLock = null);
+            }
+            dummyVideo.pause();
+            
+            isRunning = false;
+            clearInterval(timerInterval);
+            
+            statusDot.classList.remove('active');
+            statusText.innerText = "System Sleeping";
+            statusText.style.color = "var(--text-muted)";
+            toggleBtn.innerText = "ACTIVATE NOW";
+            toggleBtn.classList.remove('running');
+            document.title = "Online Mouse Jiggler | Free Tool";
+            timerDisplay.innerText = "00:00:00";
+        }
+
+        // Re-acquire lock if tab visibility changes
+        document.addEventListener('visibilitychange', async () => {
+            if (isRunning && document.visibilityState === 'visible' && wakeLock === null) {
+                if ('wakeLock' in navigator) {
+                    wakeLock = await navigator.wakeLock.request('screen');
+                }
             }
         });
     </script>
