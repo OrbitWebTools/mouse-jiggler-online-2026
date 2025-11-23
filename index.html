@@ -6,132 +6,170 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#ffffff">
     
-    <title>Online Mouse Jiggler | Move Mouse & Keep Computer Awake</title>
-    <meta name="description" content="Best Free Online Mouse Jiggler 2025. Keeps your computer awake, mouse moving, and Teams/Slack status green. No download required. Works on Windows & Mac.">
-    <meta name="keywords" content="mouse jiggler, move mouse, wiggler, mouse mover, keep computer awake, mouse auto mover, online mouse jiggler, mouse jiggler online, mouse movement, automatic mouse mover, mouse jiggler app, jiggler mouse, move mouse online">
+    <!-- 🚀 SEO OPTIMIZED METADATA -->
+    <title>Online Mouse Jiggler | Keep Active & Screen Awake (2025)</title>
+    <meta name="description" content="Free Online Mouse Jiggler to keep Microsoft Teams & Slack active. Prevents computer sleep mode. No download required. Works on Windows, Mac, & Mobile.">
+    <meta name="keywords" content="mouse jiggler, mouse mover, wiggler, keep computer awake, prevent sleep, mouse jiggler online, move mouse, active status, teams green status">
     <meta name="author" content="StayAwake Pro">
-    
-    <meta property="og:title" content="Online Mouse Jiggler - Keep Teams Green">
-    <meta property="og:description" content="Prevent sleep mode and keep your screen active without installing software.">
-    <meta property="og:type" content="website">
 
+    <!-- Premium Font (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     
     <style>
+        /* --- PREMIUM WHITE THEME CSS --- */
         :root {
-            --primary: #2563eb;       /* Royal Blue */
-            --primary-hover: #1d4ed8;
-            --success: #10b981;       /* Green for Active */
-            --bg-body: #ffffff;       /* Pure White */
-            --bg-card: #f8fafc;       /* Very Light Grey */
-            --text-main: #0f172a;     /* Dark Navy */
-            --text-muted: #64748b;    /* Grey */
-            --border: #e2e8f0;
-            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            --primary: #000000;
+            --active: #16a34a;  /* Premium Green */
+            --stop: #dc2626;    /* Premium Red */
+            --bg: #ffffff;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --border: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 
         body {
-            background-color: var(--bg-body);
-            color: var(--text-main);
+            background-color: var(--bg);
+            color: var(--text);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
         }
 
-        /* NAVBAR */
+        /* Nav */
         nav {
-            width: 100%; padding: 1.5rem 2rem;
+            width: 100%; padding: 1.2rem 2rem;
             display: flex; justify-content: space-between; align-items: center;
             border-bottom: 1px solid var(--border);
-            background: rgba(255,255,255,0.8);
-            backdrop-filter: blur(10px);
-            position: sticky; top: 0; z-index: 100;
+            background: rgba(255,255,255,0.95);
+            position: sticky; top: 0; z-index: 50;
         }
-        .logo { font-weight: 800; font-size: 1.25rem; letter-spacing: -0.5px; color: var(--text-main); }
-        .logo span { color: var(--primary); }
+        .logo { font-weight: 800; font-size: 1.2rem; letter-spacing: -0.5px; }
+        .logo span { color: var(--active); }
 
-        /* AD SPACE (TOP) */
-        .ad-banner-top {
-            width: 100%; max-width: 728px; height: 90px;
-            background: #f1f5f9; border-radius: 8px;
-            margin: 20px auto; display: flex; align-items: center; justify-content: center;
-            color: #94a3b8; font-size: 0.8rem; border: 1px dashed #cbd5e1;
+        /* --- AD CONTAINERS (Auto Refresh Logic) --- */
+        .ad-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0;
+            min-height: 100px; /* Space reserve taaki layout shift na ho */
         }
-
-        /* MAIN CONTAINER */
-        .main-container {
-            width: 100%; max-width: 500px;
-            padding: 2rem; text-align: center;
-            margin-top: 1rem;
-        }
-
-        h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 0.5rem; line-height: 1.1; }
-        .subtitle { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2.5rem; }
-
-        /* CARD DESIGN */
-        .tool-card {
-            background: var(--bg-body);
-            border: 1px solid var(--border);
-            border-radius: 24px;
-            padding: 3rem 2rem;
-            box-shadow: var(--shadow);
-            position: relative;
+        
+        /* Placeholder styling agar ad load na ho */
+        .ad-slot {
+            text-align: center;
+            background: #f9fafb;
+            border: 1px dashed #e5e7eb;
+            border-radius: 8px;
             overflow: hidden;
-            transition: transform 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .tool-card:hover { transform: translateY(-2px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+        .top-slot { width: 728px; height: 90px; }
+        .bottom-slot { width: 300px; height: 250px; }
+        .ad-text { font-size: 0.75rem; color: #d1d5db; }
 
-        /* STATUS INDICATOR */
-        .status-dot {
-            width: 16px; height: 16px; background: #cbd5e1;
-            border-radius: 50%; margin: 0 auto 1.5rem;
-            box-shadow: 0 0 0 4px #f1f5f9;
-            transition: all 0.5s;
+        /* Main Card */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 500px;
+            padding: 1rem;
+            text-align: center;
         }
-        .status-dot.active { background: var(--success); box-shadow: 0 0 0 4px #d1fae5, 0 0 20px var(--success); }
 
-        .timer { font-size: 3.5rem; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -2px; margin-bottom: 0.5rem; }
-        .status-text { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 2rem; }
+        h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 0.5rem; }
+        p.sub { color: var(--text-light); margin-bottom: 2.5rem; font-size: 1rem; }
 
-        /* BUTTON */
-        .btn-primary {
-            width: 100%; padding: 1.2rem;
-            background: var(--text-main); color: white;
-            border: none; border-radius: 12px;
-            font-size: 1.1rem; font-weight: 600;
-            cursor: pointer; transition: all 0.2s;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        /* Status & Timer */
+        .status-box {
+            margin-bottom: 2rem;
         }
-        .btn-primary:hover { background: #334155; transform: translateY(-1px); }
-        .btn-primary:active { transform: scale(0.98); }
+        .status-icon {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            filter: grayscale(100%);
+            transition: all 0.3s;
+            opacity: 0.5;
+        }
+        .status-icon.active {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .timer {
+            font-family: monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+        .status-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-light);
+        }
+
+        /* Action Button */
+        .btn-main {
+            width: 100%;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: var(--shadow);
+            background: var(--primary);
+            color: white;
+        }
         
-        .btn-primary.running {
-            background: white; color: var(--text-main);
-            border: 2px solid var(--border);
-        }
-        .btn-primary.running:hover { border-color: #ef4444; color: #ef4444; }
+        .btn-main:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .btn-main:active { transform: scale(0.98); }
 
-        /* AD SPACE (CENTER) */
-        .ad-banner-center {
-            width: 300px; height: 250px;
-            background: #f1f5f9; border-radius: 8px;
-            margin: 2rem auto 0; display: flex; align-items: center; justify-content: center;
-            color: #94a3b8; font-size: 0.8rem; border: 1px dashed #cbd5e1;
+        .btn-main.stop-mode {
+            background: white;
+            color: var(--stop);
+            border: 2px solid #fee2e2;
+        }
+        .btn-main.stop-mode:hover {
+            border-color: var(--stop);
+            background: #fef2f2;
         }
 
-        /* HIDDEN SEO CONTENT */
-        .seo-box { 
-            margin-top: 3rem; text-align: left; 
-            padding: 2rem; background: #f8fafc; border-radius: 16px;
-            font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;
+        /* SEO Footer */
+        .seo-footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #9ca3af;
+            max-width: 600px;
+            line-height: 1.5;
+            text-align: center;
         }
-        .seo-box h2 { color: var(--text-main); font-size: 1.2rem; margin-bottom: 1rem; }
-        
+
         .hidden-video { position: absolute; width: 1px; height: 1px; opacity: 0.001; pointer-events: none; }
     </style>
 </head>
@@ -139,142 +177,185 @@
 
     <nav>
         <div class="logo">Stay<span>Awake</span></div>
-        <div style="font-size:0.9rem; font-weight:500;">Free Online Tool</div>
+        <div style="font-size: 0.85rem; font-weight: 500;">Free Online Tool</div>
     </nav>
 
-    <div class="ad-banner-top">
-        <span>Advertisement Space</span>
+    <!-- 💰 TOP BANNER AD (728x90) -->
+    <div class="ad-wrapper">
+        <div class="ad-slot top-slot" id="top-ad-container">
+            <!-- 👇 PASTE 728x90 CODE HERE (Inside this div) 👇 -->
+            <span class="ad-text">Ads Loading...</span>
+            
+        </div>
     </div>
 
+    <!-- Background Helper -->
     <video id="dummyVideo" class="hidden-video" loop playsinline muted>
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
     </video>
 
-    <div class="main-container">
+    <div class="container">
         <h1>Mouse Jiggler</h1>
-        <p class="subtitle">Keep your computer awake & status active.</p>
+        <p class="sub">Prevent computer sleep & keep Teams active.</p>
 
-        <div class="tool-card">
-            <div class="status-dot" id="statusDot"></div>
+        <div class="status-box">
+            <div class="status-icon" id="statusIcon">💤</div>
             <div class="timer" id="timer">00:00:00</div>
-            <div class="status-text" id="statusText">System Sleeping</div>
-
-            <button class="btn-primary" id="toggleBtn">ACTIVATE NOW</button>
+            <div class="status-label" id="statusLabel">System Sleeping</div>
         </div>
 
-        <div class="ad-banner-center">
-            <span>Ad Space (300x250)</span>
-        </div>
+        <!-- The Magic Button -->
+        <button class="btn-main" id="toggleBtn">ACTIVATE JIGGLER</button>
 
-        <div class="seo-box">
-            <h2>Why use our Online Mouse Jiggler?</h2>
-            <p>
-                StayAwake is the best <strong>online mouse jiggler</strong> and <strong>mouse mover</strong> tool. 
-                Whether you need to <strong>keep computer awake</strong> for downloads or maintain a green status on Teams/Slack, 
-                our free <strong>wiggler</strong> works perfectly.
-            </p>
-            <p style="margin-top:10px;">
-                No need to download a <strong>mouse jiggler app</strong> or buy a physical <strong>jiggler mouse</strong>. 
-                Just click activate and let our <strong>automatic mouse mover</strong> handle the rest. 
-                Use this <strong>move mouse online</strong> utility safely on any device.
-            </p>
+        <!-- SEO Content -->
+        <div class="seo-footer">
+            <p><strong>Safe & Secure:</strong> Runs entirely in your browser. No downloads needed.</p>
+            <p>Perfect for maintaining active status on Slack, Teams, Discord, and Skype.</p>
         </div>
     </div>
 
-    <script type='text/javascript' src='//pl28113085.effectivegatecpm.com/4b/d4/1a/4bd41ae30bb22fc804c3d14aa4f255a2.js'></script>
+    <!-- 💰 BOTTOM BANNER AD (300x250) -->
+    <div class="ad-wrapper">
+        <div class="ad-slot bottom-slot" id="bottom-ad-container">
+            <!-- 👇 PASTE 300x250 CODE HERE (Inside this div) 👇 -->
+            <span class="ad-text">Ads Loading...</span>
+
+        </div>
+    </div>
+
+    <!-- 🔥 ADSTERRA POP-UNDER & SOCIAL BAR SCRIPTS 🔥 -->
     
-    <script type='text/javascript' src='//pl28113092.effectivegatecpm.com/8d/0c/63/8d0c6341317f6a7ee278a1769846d68b.js'></script>
+    <!-- 1. POP-UNDER (Paste code below) -->
+    <!-- (Agar code active hai to yahan paste karo) -->
+
+    <!-- 2. SOCIAL BAR (Paste code below) -->
+    <!-- (Agar code active hai to yahan paste karo) -->
 
     <script>
-        // 👇 YOUR DIRECT LINK CONFIGURATION 👇
-        const DIRECT_LINK_URL = "https://www.effectivegatecpm.com/mya99wcxc?key=64d9a20b4180ef34ece4742665c53be0";
+        // 💰 CONFIGURATION 💰
+        const DIRECT_LINK_URL = "https://www.effectivegatecpm.com/wtv8888v?key=d837f9dc7c48bf7b0d830d9f0d04a531";
+        const AD_REFRESH_TIME = 60000; // 60 Seconds
 
         let wakeLock = null;
         let timerInterval = null;
+        let adRefreshInterval = null;
         let startTime = null;
         let isRunning = false;
 
-        // Elements
-        const statusDot = document.getElementById('statusDot');
-        const statusText = document.getElementById('statusText');
+        const statusIcon = document.getElementById('statusIcon');
+        const statusLabel = document.getElementById('statusLabel');
         const toggleBtn = document.getElementById('toggleBtn');
         const timerDisplay = document.getElementById('timer');
         const dummyVideo = document.getElementById('dummyVideo');
 
-        function formatTime(ms) {
-            const date = new Date(ms);
-            return date.toISOString().substr(11, 8);
-        }
-
-        // BUTTON CLICK HANDLER
+        // --- BUTTON LOGIC (THE MONEY MAKER) ---
         toggleBtn.addEventListener('click', () => {
             if (!isRunning) {
-                // 1. Open Ad in New Tab (Money Maker)
+                // 👉 CASE 1: ACTIVATING
+                // Logic: No Ad, just start the tool.
+                startJiggler();
+            } else {
+                // 👉 CASE 2: STOPPING (DEACTIVATING)
+                // Logic: Open Ad immediately, then stop tool.
                 if (DIRECT_LINK_URL) {
                     window.open(DIRECT_LINK_URL, '_blank');
                 }
-                // 2. Start Jiggler
-                startJiggler();
-            } else {
                 stopJiggler();
             }
         });
 
+        // --- CORE JIGGLER FUNCTIONS ---
         async function startJiggler() {
             try {
-                // Try WakeLock API
                 if ('wakeLock' in navigator) {
                     wakeLock = await navigator.wakeLock.request('screen');
                 }
-                // Fallback to Video
                 dummyVideo.play().catch(()=>{});
 
-                // Update UI
                 isRunning = true;
                 startTime = Date.now();
-                statusDot.classList.add('active');
-                statusText.innerText = "Active • Keeping Awake";
-                statusText.style.color = "var(--success)";
-                toggleBtn.innerText = "STOP JIGGLER";
-                toggleBtn.classList.add('running');
+
+                // UI Update
+                statusIcon.innerHTML = "⚡";
+                statusIcon.classList.add('active');
+                statusLabel.innerText = "ACTIVE • KEEPING AWAKE";
+                statusLabel.style.color = "var(--active)";
+                
+                toggleBtn.innerText = "STOP & DEACTIVATE";
+                toggleBtn.classList.add('stop-mode');
+                
                 document.title = "🟢 Active | Mouse Jiggler";
 
                 // Start Timer
                 timerInterval = setInterval(() => {
                     const elapsed = Date.now() - startTime;
-                    timerDisplay.innerText = formatTime(elapsed);
+                    timerDisplay.innerText = new Date(elapsed).toISOString().substr(11, 8);
                 }, 1000);
 
+                // Start Ad Auto-Refresh
+                startAdRefresh();
+
             } catch (err) {
-                console.error(err);
-                alert("Browser policy blocked wake lock. Interact with page first.");
+                alert("Please click anywhere on the page to allow wake lock.");
             }
         }
 
         function stopJiggler() {
-            if (wakeLock) {
-                wakeLock.release().then(() => wakeLock = null);
-            }
+            if (wakeLock) wakeLock.release().then(() => wakeLock = null);
             dummyVideo.pause();
-            
+
             isRunning = false;
             clearInterval(timerInterval);
+            stopAdRefresh();
+
+            // UI Update
+            statusIcon.innerHTML = "💤";
+            statusIcon.classList.remove('active');
+            statusLabel.innerText = "SYSTEM SLEEPING";
+            statusLabel.style.color = "var(--text-light)";
             
-            statusDot.classList.remove('active');
-            statusText.innerText = "System Sleeping";
-            statusText.style.color = "var(--text-muted)";
-            toggleBtn.innerText = "ACTIVATE NOW";
-            toggleBtn.classList.remove('running');
-            document.title = "Online Mouse Jiggler | Free Tool";
+            toggleBtn.innerText = "ACTIVATE JIGGLER";
+            toggleBtn.classList.remove('stop-mode');
+            
+            document.title = "Online Mouse Jiggler";
             timerDisplay.innerText = "00:00:00";
         }
 
-        // Re-acquire lock if tab visibility changes
+        // --- AD REFRESH LOGIC (60 Seconds) ---
+        function startAdRefresh() {
+            // Hum sirf iframe/slots ko refresh karenge taaki page load na ho
+            if(adRefreshInterval) clearInterval(adRefreshInterval);
+            
+            adRefreshInterval = setInterval(() => {
+                // Note: Adsterra scripts ko manually refresh karna mushkil hai bina page reload ke
+                // isliye hum 'soft refresh' karenge jo DOM update karta hai.
+                console.log("Refreshing Ad slots...");
+                
+                // Agar tumhare paas IFRAME code hai to ye best kaam karega.
+                // JS codes automatically rotate hote hain.
+                const topAd = document.getElementById('top-ad-container');
+                const bottomAd = document.getElementById('bottom-ad-container');
+                
+                // Simple trick to force browser to repaint/recheck ads
+                if(topAd) topAd.style.display = 'none';
+                if(bottomAd) bottomAd.style.display = 'none';
+                
+                setTimeout(() => {
+                    if(topAd) topAd.style.display = 'flex';
+                    if(bottomAd) bottomAd.style.display = 'flex';
+                }, 100);
+
+            }, AD_REFRESH_TIME);
+        }
+
+        function stopAdRefresh() {
+            if(adRefreshInterval) clearInterval(adRefreshInterval);
+        }
+
+        // Tab Visibility Logic
         document.addEventListener('visibilitychange', async () => {
             if (isRunning && document.visibilityState === 'visible' && wakeLock === null) {
-                if ('wakeLock' in navigator) {
-                    wakeLock = await navigator.wakeLock.request('screen');
-                }
+                if ('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen');
             }
         });
     </script>
