@@ -6,13 +6,11 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#ffffff">
     
-    <!-- 🚀 SEO OPTIMIZED METADATA -->
-    <title>Online Mouse Jiggler | Keep Active & Screen Awake (2025)</title>
-    <meta name="description" content="Free Online Mouse Jiggler to keep Microsoft Teams & Slack active. Prevents computer sleep mode. No download required. Works on Windows, Mac, & Mobile.">
+    <title>Online Mouse Jiggler | Keep Teams Active & Screen Awake</title>
+    <meta name="description" content="Free Online Mouse Jiggler 2025. Keeps your computer awake, mouse moving, and Teams/Slack status green. No download required. Works on Windows, Mac, & Mobile.">
     <meta name="keywords" content="mouse jiggler, mouse mover, wiggler, keep computer awake, prevent sleep, mouse jiggler online, move mouse, active status, teams green status">
     <meta name="author" content="StayAwake Pro">
 
-    <!-- Premium Font (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     
@@ -51,22 +49,20 @@
         .logo { font-weight: 800; font-size: 1.2rem; letter-spacing: -0.5px; }
         .logo span { color: var(--active); }
 
-        /* --- AD CONTAINERS (Auto Refresh Logic) --- */
+        /* --- AD CONTAINERS --- */
         .ad-wrapper {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 1.5rem 0;
-            min-height: 100px; /* Space reserve taaki layout shift na ho */
+            min-height: 100px; 
         }
         
-        /* Placeholder styling agar ad load na ho */
+        /* Clean Ad Slot Styling */
         .ad-slot {
             text-align: center;
-            background: #f9fafb;
-            border: 1px dashed #e5e7eb;
-            border-radius: 8px;
+            background: #ffffff;
             overflow: hidden;
             display: flex;
             justify-content: center;
@@ -74,7 +70,6 @@
         }
         .top-slot { width: 728px; height: 90px; }
         .bottom-slot { width: 300px; height: 250px; }
-        .ad-text { font-size: 0.75rem; color: #d1d5db; }
 
         /* Main Card */
         .container {
@@ -93,9 +88,7 @@
         p.sub { color: var(--text-light); margin-bottom: 2.5rem; font-size: 1rem; }
 
         /* Status & Timer */
-        .status-box {
-            margin-bottom: 2rem;
-        }
+        .status-box { margin-bottom: 2rem; }
         .status-icon {
             font-size: 4rem;
             margin-bottom: 0.5rem;
@@ -134,40 +127,26 @@
 
         /* Action Button */
         .btn-main {
-            width: 100%;
-            padding: 1.2rem;
-            border-radius: 12px;
-            border: none;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.2s;
+            width: 100%; padding: 1.2rem;
+            border-radius: 12px; border: none;
+            font-size: 1.1rem; font-weight: 700;
+            cursor: pointer; transition: all 0.2s;
             box-shadow: var(--shadow);
-            background: var(--primary);
-            color: white;
+            background: var(--primary); color: white;
         }
         
         .btn-main:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
         .btn-main:active { transform: scale(0.98); }
 
         .btn-main.stop-mode {
-            background: white;
-            color: var(--stop);
+            background: white; color: var(--stop);
             border: 2px solid #fee2e2;
         }
-        .btn-main.stop-mode:hover {
-            border-color: var(--stop);
-            background: #fef2f2;
-        }
+        .btn-main.stop-mode:hover { border-color: var(--stop); background: #fef2f2; }
 
-        /* SEO Footer */
         .seo-footer {
-            margin-top: 2rem;
-            font-size: 0.8rem;
-            color: #9ca3af;
-            max-width: 600px;
-            line-height: 1.5;
-            text-align: center;
+            margin-top: 2rem; font-size: 0.8rem; color: #9ca3af;
+            max-width: 600px; line-height: 1.5; text-align: center;
         }
 
         .hidden-video { position: absolute; width: 1px; height: 1px; opacity: 0.001; pointer-events: none; }
@@ -180,16 +159,21 @@
         <div style="font-size: 0.85rem; font-weight: 500;">Free Online Tool</div>
     </nav>
 
-    <!-- 💰 TOP BANNER AD (728x90) -->
     <div class="ad-wrapper">
         <div class="ad-slot top-slot" id="top-ad-container">
-            <!-- 👇 PASTE 728x90 CODE HERE (Inside this div) 👇 -->
-            <span class="ad-text">Ads Loading...</span>
-            
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'da1a352c776635fa7984cd1fb95c4041',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/da1a352c776635fa7984cd1fb95c4041/invoke.js"></script>
         </div>
     </div>
 
-    <!-- Background Helper -->
     <video id="dummyVideo" class="hidden-video" loop playsinline muted>
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
     </video>
@@ -204,43 +188,42 @@
             <div class="status-label" id="statusLabel">System Sleeping</div>
         </div>
 
-        <!-- The Magic Button -->
         <button class="btn-main" id="toggleBtn">ACTIVATE JIGGLER</button>
 
-        <!-- SEO Content -->
         <div class="seo-footer">
             <p><strong>Safe & Secure:</strong> Runs entirely in your browser. No downloads needed.</p>
             <p>Perfect for maintaining active status on Slack, Teams, Discord, and Skype.</p>
         </div>
     </div>
 
-    <!-- 💰 BOTTOM BANNER AD (300x250) -->
     <div class="ad-wrapper">
         <div class="ad-slot bottom-slot" id="bottom-ad-container">
-            <!-- 👇 PASTE 300x250 CODE HERE (Inside this div) 👇 -->
-            <span class="ad-text">Ads Loading...</span>
-
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'eea17f69018ec26e6e52c77738858670',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/eea17f69018ec26e6e52c77738858670/invoke.js"></script>
         </div>
     </div>
 
-    <!-- 🔥 ADSTERRA POP-UNDER & SOCIAL BAR SCRIPTS 🔥 -->
-    
-    <!-- 1. POP-UNDER (Paste code below) -->
-    <!-- (Agar code active hai to yahan paste karo) -->
+    <script type='text/javascript' src='//pl28120871.effectivegatecpm.com/b8/2a/fe/b82afee8cc534f12fba12741bfb629a1.js'></script>
 
-    <!-- 2. SOCIAL BAR (Paste code below) -->
-    <!-- (Agar code active hai to yahan paste karo) -->
 
     <script>
-        // 💰 CONFIGURATION 💰
+        // 💰 MONEY LOGIC CONFIGURATION 💰
+        // Direct Link for STOP button
         const DIRECT_LINK_URL = "https://www.effectivegatecpm.com/wtv8888v?key=d837f9dc7c48bf7b0d830d9f0d04a531";
-        const AD_REFRESH_TIME = 60000; // 60 Seconds
-
+        
         let wakeLock = null;
         let timerInterval = null;
-        let adRefreshInterval = null;
         let startTime = null;
         let isRunning = false;
+        let refreshInterval = null;
 
         const statusIcon = document.getElementById('statusIcon');
         const statusLabel = document.getElementById('statusLabel');
@@ -248,15 +231,15 @@
         const timerDisplay = document.getElementById('timer');
         const dummyVideo = document.getElementById('dummyVideo');
 
-        // --- BUTTON LOGIC (THE MONEY MAKER) ---
+        // --- SMART BUTTON LOGIC ---
         toggleBtn.addEventListener('click', () => {
             if (!isRunning) {
-                // 👉 CASE 1: ACTIVATING
-                // Logic: No Ad, just start the tool.
+                // 👉 CASE 1: STARTING
+                // Logic: Sirf Timer shuru karo. AD MAT KHOLO.
                 startJiggler();
             } else {
-                // 👉 CASE 2: STOPPING (DEACTIVATING)
-                // Logic: Open Ad immediately, then stop tool.
+                // 👉 CASE 2: STOPPING
+                // Logic: Ab Ad kholo (Direct Link) aur Timer band karo.
                 if (DIRECT_LINK_URL) {
                     window.open(DIRECT_LINK_URL, '_blank');
                 }
@@ -291,12 +274,12 @@
                     const elapsed = Date.now() - startTime;
                     timerDisplay.innerText = new Date(elapsed).toISOString().substr(11, 8);
                 }, 1000);
-
-                // Start Ad Auto-Refresh
-                startAdRefresh();
+                
+                // Start Auto Refresh for Banners
+                startRefreshLoop();
 
             } catch (err) {
-                alert("Please click anywhere on the page to allow wake lock.");
+                alert("Click anywhere on the page to activate wake lock.");
             }
         }
 
@@ -306,7 +289,7 @@
 
             isRunning = false;
             clearInterval(timerInterval);
-            stopAdRefresh();
+            stopRefreshLoop();
 
             // UI Update
             statusIcon.innerHTML = "💤";
@@ -321,38 +304,24 @@
             timerDisplay.innerText = "00:00:00";
         }
 
-        // --- AD REFRESH LOGIC (60 Seconds) ---
-        function startAdRefresh() {
-            // Hum sirf iframe/slots ko refresh karenge taaki page load na ho
-            if(adRefreshInterval) clearInterval(adRefreshInterval);
-            
-            adRefreshInterval = setInterval(() => {
-                // Note: Adsterra scripts ko manually refresh karna mushkil hai bina page reload ke
-                // isliye hum 'soft refresh' karenge jo DOM update karta hai.
-                console.log("Refreshing Ad slots...");
-                
-                // Agar tumhare paas IFRAME code hai to ye best kaam karega.
-                // JS codes automatically rotate hote hain.
+        // --- AD REFRESH LOGIC (Simple Display Toggle every 60s) ---
+        function startRefreshLoop() {
+            if(refreshInterval) clearInterval(refreshInterval);
+            refreshInterval = setInterval(() => {
                 const topAd = document.getElementById('top-ad-container');
-                const bottomAd = document.getElementById('bottom-ad-container');
+                const botAd = document.getElementById('bottom-ad-container');
                 
-                // Simple trick to force browser to repaint/recheck ads
-                if(topAd) topAd.style.display = 'none';
-                if(bottomAd) bottomAd.style.display = 'none';
-                
-                setTimeout(() => {
-                    if(topAd) topAd.style.display = 'flex';
-                    if(bottomAd) bottomAd.style.display = 'flex';
-                }, 100);
-
-            }, AD_REFRESH_TIME);
+                // Toggle display to force browser to repaint/check iframes
+                if(topAd) { topAd.style.display='none'; setTimeout(()=>topAd.style.display='flex', 50); }
+                if(botAd) { botAd.style.display='none'; setTimeout(()=>botAd.style.display='flex', 50); }
+                console.log("Refreshed Ads");
+            }, 60000); // 60 Seconds
         }
 
-        function stopAdRefresh() {
-            if(adRefreshInterval) clearInterval(adRefreshInterval);
+        function stopRefreshLoop() {
+            if(refreshInterval) clearInterval(refreshInterval);
         }
 
-        // Tab Visibility Logic
         document.addEventListener('visibilitychange', async () => {
             if (isRunning && document.visibilityState === 'visible' && wakeLock === null) {
                 if ('wakeLock' in navigator) wakeLock = await navigator.wakeLock.request('screen');
