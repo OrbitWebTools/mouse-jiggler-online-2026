@@ -1,23 +1,33 @@
-# 🖱️ Online Mouse Jiggler (Free & No Download)
+# 🟢 Mouse Jiggler 2026 | Keep Teams Green & Active
 
-> **Keep Microsoft Teams, Slack, Outlook, and Skype Active (Green) all day.** > 👉 [**CLICK HERE TO USE THE TOOL**](https://orbitwebtools.github.io/mouse-jiggler-online-2026/)
+**[Live Demo / Use Tool Here](https://orbitwebtools.github.io/mouse-jiggler-2026/)** *(Note: Yahan apna actual GitHub Pages link daal dena)*
 
-![Online Mouse Jiggler](https://img.icons8.com/fluency/96/mouse-left-click.png)
+## 🚀 Overview
+The **Online Mouse Jiggler 2026** is a free, web-based utility designed to prevent your computer from entering sleep mode or displaying an "Away" (Yellow) status on communication platforms like Microsoft Teams, Slack, Zoom, and Skype. 
 
-## 🚀 What is this?
-**OrbitWebTools Mouse Jiggler** is a free website that prevents your computer from going to sleep. It simulates activity using the **HTML5 WakeLock API**, keeping your status "Active" on work apps without moving the mouse physically.
+Unlike physical USB jigglers or downloadable `.exe` software that can trigger IT security alerts, this tool runs entirely within your web browser sandbox, making it the safest option for remote workers.
 
-## ✅ Features
-- **100% Undetectable:** No software installation (.exe) required. IT cannot track it.
-- **Works on Mobile:** Keep your phone screen awake while reading or cooking.
-- **Free Forever:** No ads, no payments.
-- **Safe:** Runs entirely in your browser (Client-Side).
+## ✨ Key Features
+* **No Installation Required:** Runs directly in your browser. No admin rights or sketchy downloads needed.
+* **100% Undetectable:** Uses zero hardware and leaves no footprint in system process logs (Safe from CrowdStrike/SentinelOne scans).
+* **Modern WakeLock API:** Utilizes the official HTML5 Screen Wake Lock API to safely request your device to stay awake.
+* **Cross-Platform:** Works flawlessly on Windows 11/10, macOS (Safari/Chrome), and even mobile devices.
+* **Completely Free:** No premium versions or hidden subscriptions.
 
-## 🛠️ How to Use
-1. Open [Live Tool Here](https://orbitwebtools.github.io/mouse-jiggler-online-2026/).
-2. Click **"ACTIVATE JIGGLER"**.
-3. Keep the tab open (you can minimize it).
-4. Enjoy your "Green" status!
+## 🛠️ How It Works
+Our tool uses a combination of modern browser APIs to signal the Operating System that activity is occurring, seamlessly preventing the system's idle timeout trigger.
+
+### Usage Instructions:
+1. Open the [Mouse Jiggler Web App](https://orbitwebtools.github.io/mouse-jiggler-2026/).
+2. Click the **"ACTIVATE JIGGLER"** button.
+3. Allow the browser permission if prompted.
+4. Keep the browser tab open (you can minimize the window, but do not close the tab).
+5. Your status will remain "Active" until you click **"STOP JIGGLER"**.
+
+## 💻 Tech Stack
+* **Frontend:** HTML5, CSS3 (Custom Responsive UI)
+* **Logic:** Vanilla JavaScript 
+* **Core Tech:** Screen Wake Lock API
 
 ---
-*Keywords: mouse jiggler online, keep teams green, prevent sleep, fake mouse movement, stay awake pc*
+*Disclaimer: This project is intended for personal productivity and to prevent screen sleep during long tasks (like reading documents). Users are strictly responsible for adhering to their organization's IT and compliance policies.*
